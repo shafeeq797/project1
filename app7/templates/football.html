@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <body>
+            <form method="post" action="/footballadded/">
+                {% csrf_token %}
+            
+                <label>Player name</label>
+                <input type="text" name="nme" ><br><br>
+                <label>age</label>
+                <input type="text" name="age" ><br><br>
+                <label>Player position</label>
+                <input type="text" name="pp" ><br><br>
+                <label>Place</label>
+                <input type="text" name="plc"><br><br>
+                
+                
+                <input type="submit" value="Add">
+            </form>
+        </body>
+    </head>
+</html>
